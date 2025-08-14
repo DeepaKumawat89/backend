@@ -29,6 +29,4 @@ def login():
     }, app.config['SECRET_KEY'], algorithm='HS256')
     return jsonify({'token': token}), 200
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
 
